@@ -1,8 +1,8 @@
 import pickle
-from hmm import HMM
+from hidden_markov import HMM
 
 # load trained model
-hmm_parameters = pickle.load(open('pickle/hmm_parameters.p', 'rb'))
+hmm_parameters = pickle.load(open('data/pickle/hmm_parameters.p', 'rb'))
 transition_prob = hmm_parameters[0]
 emission_prob = hmm_parameters[1]
 initial_prob = hmm_parameters[2]

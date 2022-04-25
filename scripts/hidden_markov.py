@@ -80,7 +80,7 @@ class HMM:
 
         
         hmm_parameters = (self.a, self.b, self.pi)
-        pickle.dump(hmm_parameters, open('pickle/hmm_parameters.p', 'wb'))
+        pickle.dump(hmm_parameters, open('data/pickle/hmm_parameters.p', 'wb'))
     def get_uniques(self, observations):
 
         uniques = []

@@ -1,13 +1,13 @@
 import pickle
 import nltk
-from hmm import HMM
+from hidden_markov import HMM
 import sys
 import string
 
 print('Cleaning text... ', end='')
 sys.stdout.flush()
 # get raw text from file
-f = open('text/amazon_reviews.txt')
+f = open('data/text/amazon_reviews.txt')
 text = ' '.join(f.read().splitlines())
 f.close()
 
